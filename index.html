@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programacion WEB</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./css/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="container bg-white" id="header">
+        <div class="row align-items-center">
+            <div class="col-md-3 text-left">
+                <img src="./images/logo_tecnm.svg" alt="Logo Tec-NM" height="90px">
+            </div>
+            <div class="col-md-6 text-center">
+                <h4 class="text-primary">Programacion WEB</h4>
+                <h6 class="text-success">Proyecto que incluye HTML,</h6>
+                <h6 class="text-success">Bootstrap y Javascript</h6>
+            </div>
+            <div class="col-md-3 text-right">
+                <img src="./images/logo_ittj.png" alt="Logo ITTJ" height="100px">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12">
+                <nav id="barraMenu" class="navbar navbar-expand-md navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Menu:</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#contenido" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="contenido">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    Modulos Escolares
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="https://www.ittlajomulco.edu.mx/" target="_blank">TecNM-Tlajomulco</a>
+                                    <a class="dropdown-item" href="https://ittlajomulco.mindbox.app/login/" target="_blank">Servicios Escolares</a>
+                                    <a class="dropdown-item" href="http://ead.tlajomulco.tecnm.mx/" target="_blank">Educacion Online</a>
+                                    <a class="dropdown-item" href="http://sisae.tlajomulco.tecnm.mx/" target="_blank">SISAE</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown" id="Temario">
+                                <a class="nav-link dropdown-toggle" href="#" id="Temario" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    Secciones
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="Temario">
+                                    <a class="dropdown-item" href="#T">
+                                        Temario</a>
+                                    <a class="dropdown-item" href="#T1">
+                                        1. Introducción a las aplicaciones web</a>
+                                    <a class="dropdown-item" href="#T2">
+                                        2. HTML, XML y CSS</a>
+                                    <a class="dropdown-item" href="#T3">
+                                        3. Programación del lado del cliente</a>
+                                    <a class="dropdown-item" href="#T4">
+                                        4. Programación del lado del servidor</a>
+                                    <a class="dropdown-item" href="#T5">
+                                        5. Cómputo en la nube y servicios</a>
+                                    <a class="dropdown-item" href="#A">
+                                        Alumnos</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" title="Agregar alumno a la materia"  data-toggle="modal" data-target="#miModal">Agregar Alumno</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <article class="container" data-spy="scroll" data-target="#barraMenu" data-offset="0">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4 class="text-primary">Programacion WEB</h4>
+                <p class="text-justify">
+                    Esta asignatura aporta al perfil del egresado la capacidad para desarrollar y administrar software que
+                    apoye la productividad y competitividad de las organizaciones cumpliendo con estándares de calidad,
+                    mediante el desarrollo de aplicaciones web utilizando lenguajes de marcas, de presentación, del lado
+                    del cliente, del servidor y con la colaboración de cómputo en la nube. 
+                </p>
+                <p class="text-justify">
+                    Es de suma importancia porque permite al estudiante concluir en un proyecto formal de desarrollo de
+                    software aplicando varias competencias adquiridas durante su trayectoria de formación, por ello se
+                    inserta en los últimos semestres.
+                </p>
+                <p class="text-justify">
+                    Para adquirir la competencia planteada en esta asignatura es necesario que el estudiante haya acreditado
+                    la asignatura de Programación Orientada a Objetos, Taller de Bases de Datos y Taller de Ingeniería de
+                    Software. 
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h5 id="T" class="text-primary">Temario</h5>
+                <div class="container">
+                    <div class="table-responsive-md">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr class="bg-info">
+                                        <th>No.</th>
+                                        <th>Unidad</th>
+                                        <th>Temas</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-justify">
+                                    <tr id="T1">
+                                        <td>1</td>
+                                        <td>Introducción a las aplicaciones web</td>
+                                        <td>1.1 Evolución de las aplicaciones web.<br>
+                                            1.2 Arquitectura de las aplicaciones web.<br>
+                                            1.3 Tecnologías para el desarrollo de aplicaciones web.<br>
+                                            1.4 Planificación de aplicaciones web<br>
+                                        </td>
+                                    </tr>
+                                    <tr id="T2">
+                                        <td>2</td>
+                                        <td>HTML, XML y CSS</td>
+                                        <td>2.1 Introducción.<br>
+                                            2.2 Estructura global de un documento Web.<br>
+                                            2.3 Elementos básicos: texto, vínculos, listas,
+                                            tablas, objetos, imágenes y aplicaciones.<br>
+                                            2.4 Formularios<br>
+                                            2.5 Lenguajes de presentación en documentos Web.<br>
+                                            2.6 Selectores.<br>
+                                            2.7 Modelo de caja.<br>
+                                        </td>
+                                    </tr>
+                                    <tr id="T3">
+                                        <td>3</td>
+                                        <td>Programación del lado del cliente</td>
+                                        <td>3.1 Introducción al lenguaje.<br>
+                                            3.2 Manejo de Frameworks<br>
+                                            3.3 Estructuras de Control.<br>
+                                            3.4 Manipulación de objetos<br>
+                                        </td>
+                                    </tr>
+                                    <tr id="T4">
+                                        <td>4</td>
+                                        <td>Programación del lado del servidor</td>
+                                        <td>4.1 Introducción al lenguaje.<br>
+                                            4.2 Estructuras de Control.<br>
+                                            4.3 Tratamiento de Formularios.<br>
+                                            4.4 Manejo de objetos del servidor<br>
+                                            4.5 Creación de clases.<br>
+                                            4.6 Acceso a datos.<br>
+                                        </td>
+                                    </tr>
+                                    <tr id="T5">
+                                        <td>5</td>
+                                        <td>Cómputo en la nube y servicios</td>
+                                        <td>5.1 Conceptos generales.<br>
+                                            5.2 Tipos de Servicios en la nube.<br>
+                                            5.3 Patrones de diseño.<br>
+                                            5.4 Estándares en servicios.<br>
+                                            5.5 Plataformas tecnológicas<br>
+                                            5.6 Seguridad e interoperabilidad.<br>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!-- Modal -->
+                <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-primary" id="exampleModalLabel">Datos del alumno</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" 
+                                        aria-describedby="Nombre del estudiante" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="edad" class="mr-3">Edad</label>
+                                        <input type="number" class="form-control" id="edad" min="18" max="50" value="18">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fechaNacimiento" class="mr-3">Fecha de Nacimiento</label>
+                                        <input type="date" class="form-control" id="fechaNacimiento">
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <label>Sexo</label><br>
+                                        <input type="radio" class="form-check-input" id="sexoMasculino" name='sexo' checked>
+                                        <label class="form-check-label" for="sexoMasculino">Masculino</label><br>
+                                        <input type="radio" class="form-check-input" id="sexoFememino" name='sexo'>
+                                        <label class="form-check-label" for="sexoFemenino">Femenino</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Correo electronico</label>
+                                        <input type="email" class="form-control" id="email" 
+                                        aria-describedby="emailHelp" value="">
+                                        <small id="emailHelp" class="form-text text-muted">No compartas tu correo con nadie mas</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="calificacion" class="mr-3">Calificacion</label>
+                                        <input type="number" class="form-control" id="calificacion" 
+                                        min="0" max="100" value="70">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="motivo" class="mr-3">Motivo de la calificacion</label>
+                                        <textarea class="form-control" id="motivo" rows="3"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="btnRegistrar" type="button" class="btn btn-success" data-dismiss="modal">Registrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center" id="A">
+                    <h5 class="text-primary" id="CantAlumnos">Alumnos(0)</h5>
+                    <i id="cargarALumnosFromFile" class="fa fa-file text-success" aria-hidden="true" title="Cargar los alumnos desde un archivo en el servidor"></i>
+                </div>
+                <div class="container">
+                    <input class="form-control" id="myFiltroAlumnos" type="text" placeholder="Filtrar por cualquier campo...">
+                </div>
+                <div class="table-responsive-md">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class="bg-info">
+                                <th>Nombre</th>
+                                <th>Edad</th>
+                                <th>Fecha de Nacimiento</th>
+                                <th>Sexo</th>
+                                <th>eMail</th>
+                                <th>Calificacion</th>
+                                <th>Motivo</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tAlumnos">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer class="container">
+        <div class="row align-items-center">
+			<div class="col-md-12" style="text-align: center">
+                <hr>
+                <p class="small">Km. 10 CARRETERA TLAJOMULCO-SAN MIGUEL CUYUTLAN. TLAJOMULCO DE ZUÑIGA JALISCO. APARTADO POSTAL NO 12, CODIGO POSTAL 45640<BR>
+                TELEFONOS 01(33) 3772-4426 Y 3772-4427 DERECHOS RESERVADOS 2016 - INSTITUTO TECNOLOGICO DE TLAJOMULCO<BR>
+                CARRERA: Ingenieria en Sistemas Computacionales<BR>
+                MATERIA: Programacion WEB<BR>
+                Profesor, M.C. JOSE ANGEL TORRES RANGEL
+                </p>
+			</div>	
+		</div>
+    </footer>
+</body>
+</html>

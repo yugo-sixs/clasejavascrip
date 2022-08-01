@@ -1,0 +1,47 @@
+[
+{
+"id":1,
+"nombre":"Juan Perez",
+"edad":"24",
+"fechaNacimiento":"1997-11-07",
+"email":"juan@hotmail.com",
+"calif":"90",
+"motivo":"Entrego algunos trabajos con faltas de ortogafria"
+},
+{
+"id":2,
+"nombre":"Pedro Paramo",
+"edad":"34",
+"fechaNacimiento":"1987-05-10",
+"email":"pedro@hotmail.com",
+"calif":"65",
+"motivo":"No entrego algunos trabajos"
+},
+{
+"id":3,
+"nombre":"Adolfo Sanchez",
+"edad":"46",
+"fechaNacimiento":"1975-09-07",
+"email":"adolfo@hotmail.com",
+"calif":"100",
+"motivo":"Entrego todo en tiempo y forma"
+},
+{
+"id":4,
+"nombre":"Gabriel Gomez",
+"edad":"51",
+"fechaNacimiento":"1969-11-11",
+"email":"gabriel@hotmail.com",
+"calif":"60",
+"motivo":"No presento 2 examenes"
+},
+{
+"id":5,
+"nombre":"Luis Ortiz",
+"edad":"63",
+"fechaNacimiento":"1957",
+"email":"luis@hotmail.com",
+"calif":"71",
+"motivo":"Cumplio con sus trabajos pero fuera de tiempo"
+}
+]

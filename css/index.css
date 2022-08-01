@@ -1,0 +1,40 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+.header{
+    position: static;
+}
+
+.main{
+    position: static;
+}
+/*Los media queryes siempre van hasta el final y de menor a mayor en resolucion*/
+/*
+@media (min-width: 768px) {
+    .header{
+        
+    }
+    .main {
+        
+    }
+}
+/*
+@media (min-width: 992px) {
+    .header{
+        position: fixed;
+        top: 0;
+        left : 10%;
+        background-color: white;
+        z-index: 100;
+    }
+    .main {
+        position: relative;
+        margin-top: 200px;
+    }
+}*/
